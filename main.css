@@ -1,0 +1,87 @@
+* {
+    margin: 0; /*Resetando o css*/
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /*Add Fontes*/
+}
+
+header { /*Cabeçalho*/
+    background-color: #5f27cd;/*Cor de fundo*/
+    padding: 16px 0; /*Distancia do cabeçalho pro topo e inferior, 0 lateral*/
+    color: #fff; /*Cor da fonte*/
+    display: flex; /*Para deixar o botão ao lado do titulo*/
+    border-bottom: 16px solid #341f97; /*Borda na parte inferior*/
+    justify-content: center; /*Centralizar tudo*/
+    text-transform: uppercase; /*Todas as letras maiuscula*/
+    font-style: italic; /*Fonte em italic*/
+} 
+
+header button { /*Botão do cabeçalho*/
+    margin-left: 16px; /*Distancia do Titulo pro botão*/
+}
+
+form { /*Formulario*/
+    background-color: #c8d6e5; /*Cor de fundo*/
+    padding: 24px 0; /*Distancia do formulario pro topo e inferior, 0 lateral*/
+    text-align: center; /*Texto - formulario centralizado*/
+    display: none; /* sumir com o formulario*/
+}
+
+form h2 { /*texto no H2 */
+    margin-bottom: 16px; /*margem dos botoes abaixo*/
+}
+
+input, button { /*campo e os botões adicionar e cancelar*/
+    padding: 8px; /*tamanho*/
+}
+
+button { /*Botões*/
+    background-color: #009432; /*Cor de fundo do botao*/
+    border: none; /*removendo as bordas*/
+    cursor: pointer; /*cursor do do mauser mão*/
+    font-weight: bold; /*Fonte em negrito*/
+    text-transform: uppercase; /*Texto em maiusculo*/
+    color: #fff; /*cor da fonte*/
+}
+
+#botao-cancelar { /*botao cancelar*/
+    background-color: red; /*Cor de fundo do botao*/
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-imagem-link {
+    padding: 16px;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.overlay-imagem-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-imagem-link {
+    opacity: 1;
+}
